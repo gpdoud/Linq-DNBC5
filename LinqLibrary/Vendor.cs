@@ -12,6 +12,10 @@ namespace LinqLibrary {
         public string Name { get; set; }
         public decimal Discount { get; set; }
 
+        public override string ToString() {
+            return $"Vendor: Id={Id}, Name={Name}, Discount={Discount}";
+        }
+
         public Vendor() { }
     }
 }
